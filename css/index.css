@@ -1,0 +1,102 @@
+/**************************************************************************
+Styling for the Home Page (index.php)
+**************************************************************************/
+
+@import url(portfolioGallery.css);
+
+body{
+ 
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+
+}
+
+.navigationMenu{
+
+    -webkit-box-shadow: inset 0px 0px 0px 15px white;
+    -moz-box-shadow: inset 0px 0px 0px 15px white;
+    box-shadow: inset 0px 0px 0px 15px white;
+    transition: all 0.6s ease;
+    z-index: 20;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.navigationMenuChange{
+
+    -webkit-box-shadow: inset 0px 0px 0px 0px white;
+    -moz-box-shadow: inset 0px 0px 0px 0px white;
+    box-shadow: inset 0px 0px 0px 0px white;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+.navImage{
+
+    width: clamp(260px, 65vw, 765px);
+    transition: all 0.6s ease;
+
+}
+
+.navImageChange{
+
+    width: 115px;
+    position: fixed;
+    top: 10px;
+    left: 25px;
+
+}
+
+.navigationButtonHolder{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: clamp(300px, 70vw, 850px);
+    height: 40px;
+    transition: all 0.6s ease;
+    margin-top: 20px;
+
+}
+
+.navigationButtonHolderChange{
+
+    position: fixed;
+    top: 10px;
+    right: 25px;
+    width: clamp(300px, 70vw, 650px);
+    margin-top: 0px;
+
+}
+
+.navButton{
+
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2em;
+    border-radius: 20px;
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    margin: 0;
+}
+
+@media (hover : hover){
+
+    .navButton:hover{
+
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 8px 16px;
+        font-size: 1.3em;
+
+    }
+
+}
+
