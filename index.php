@@ -20,9 +20,21 @@
   <script>
     $(document).ready(function() {
 
+      var currentPage = '';
+
       $(".navButton").on("click", function() {
 
         toggleInitialMenu();
+
+        //console.log($(this).text());
+
+        if ($(this).text() != currentPage) {
+
+          currentPage = $(this).text();
+
+          console.log(currentPage);
+
+        }
 
         if (window.innerWidth <= 700 && $("#burger").css('visibility').toLowerCase() != 'visible') {
 
@@ -63,7 +75,7 @@
         <h3 class="navButton">About Us</h3>
       </div>
       <div>
-        <h3 class="navButton" onclick="togglePortfolio()">Portfolio</h3>
+        <h3 class="navButton">Portfolio</h3>
         <h3 class="navButton">Contact Us</h3>
       </div>
       <!-- <h3 class="navButton">Our Services</h3>

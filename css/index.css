@@ -72,6 +72,9 @@ body{
     height: 40px;
     transition: all 0.6s ease;
     margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 44px;
+    padding: 5px 0px;
 
 }
 
@@ -80,7 +83,7 @@ body{
     position: fixed;
     top: 20px;
     right: 20px;
-    width: clamp(300px, 70vw, 650px);
+    width: clamp(300px, 70vw, 550px);
     margin-top: 0px;
 
 }
@@ -107,17 +110,17 @@ body{
 
 .burger{
 
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
     border: 3px solid rgba(0,0,0,0.8);
     width: 28px;
     height: 28px;
     border-radius: 20px;
     position: fixed;
-    top: 20px;
-    right: 25px;
+    top: 25px;
+    right: 30px;
     visibility: hidden;
-    transition: 0.4s ease;
+    transition: all 0.4s ease;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,32 +129,33 @@ body{
 
 .hideBurger{
 
-    background-color: rgba(255, 255, 255, 0);
-    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 0 !important;
+    transform: rotate(45deg);
 
 }
 
 .burger span {
 
-    width: 90%;
-    height: 4px;
+    width: 75%;
+    height: 2px;
     background: rgba(0, 0, 0, 1);
     transition: all 0.4s ease;
     display: block;
     position: absolute;
-    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
 
 }
 
-.burger span:nth-of-type(1) {
-
-    transform: rotate(-45deg);
-
+.showSpan{
+ 
+    opacity: 1 !important;
+    
 }
 
 .burger span:nth-of-type(2) {
 
-    transform: rotate(45deg);
+    transform: rotate(90deg);
 
 }
 
@@ -211,7 +215,7 @@ body{
         width: 36px;
         height: 36px;
         border-radius: 30px;
-        bottom: 20px;
+        bottom: 30px;
         right: auto;
         top: auto;
 
@@ -232,8 +236,8 @@ body{
     .navButton:hover{
 
         background-color: rgba(255, 255, 255, 0.9);
-        padding: 8px 16px;
-        font-size: 1.3em;
+        padding: 6px 14px;
+        font-size: 1.2em;
         border: 1px solid black;
 
     }

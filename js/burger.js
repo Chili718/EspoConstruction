@@ -26,7 +26,7 @@ function toggle() {
     burger.classList.toggle("hideBurger");
     spans.forEach(span => {
 
-        span.classList.toggle('show');
+        span.classList.toggle('showSpan');
 
     });
 
