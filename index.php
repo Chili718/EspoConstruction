@@ -21,6 +21,7 @@
     $(document).ready(function() {
 
       var currentPage = '';
+      //var previousPage = '';
 
       $(".navButton").on("click", function() {
 
@@ -30,9 +31,30 @@
 
         if ($(this).text() != currentPage) {
 
-          currentPage = $(this).text();
+          if(currentPage == 'Portfolio'){
 
-          console.log(currentPage);
+
+
+          }
+
+          switch ($(this).text()) {
+            case 'Our Services':
+              // code block
+              break;
+            case 'About Us':
+              // code block
+              break;
+            case 'Portfolio':
+              togglePortfolio();
+              break;
+            case 'Contact Us':
+              // code block
+              break;
+            default:
+              // code block
+          }
+
+          currentPage = $(this).text();
 
         }
 
