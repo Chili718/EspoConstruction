@@ -1,7 +1,6 @@
 //JS file for the functionality of the gallery
 var images = document.querySelectorAll(".galleryImage");
 var current = 0;
-var selectedOnce = false;
 
 //hiding all of the gallery images except for the first 
 for(var i = 0; i < images.length; i++){
@@ -57,18 +56,5 @@ function previous(){
         images[current].className += ' fade-in';
     }, 0);
 
-
-}
-
-function displayGallery(){
-
-    if(selectedOnce != true){
-
-        document.getElementById('navigationMenu').className += ' navigationMenuChange';
-        document.getElementById('navImage').className += ' navImageChange';
-        document.getElementById('navigationButtonHolder').className += ' navigationButtonHolderChange';
-        selectedOnce = true;
-
-    }
 
 }

@@ -17,6 +17,38 @@
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
+  <script>
+    $(document).ready(function() {
+
+      $(".navButton").on("click", function() {
+
+        toggleInitialMenu();
+
+        if (window.innerWidth <= 700 && $("#burger").css('visibility').toLowerCase() != 'visible') {
+
+          $("#burger").css('visibility', 'visible');
+
+        }
+
+      });
+
+      $(window).resize(function() {
+        //console.log($(".navigationButtonHolder").hasClass("navigationButtonHolderChange"));
+        if ($(".navigationButtonHolder").hasClass("navigationButtonHolderChange") == true && window.innerWidth <= 700 && $("#burger").css('visibility').toLowerCase() != 'visible') {
+
+          $("#burger").css('visibility', 'visible');
+
+        } else if ($(".navigationButtonHolder").hasClass("navigationButtonHolderChange") == true && window.innerWidth > 700 && $("#burger").css('visibility').toLowerCase() == 'visible') {
+
+          $("#burger").css('visibility', 'hidden');
+
+        }
+
+      });
+
+    });
+  </script>
+
 </head>
 
 <body>
@@ -26,11 +58,24 @@
 
     <div class="navigationButtonHolder" id="navigationButtonHolder">
 
-      <h3 class="navButton">Our Services</h3>
+      <div>
+        <h3 class="navButton">Our Services</h3>
+        <h3 class="navButton">About Us</h3>
+      </div>
+      <div>
+        <h3 class="navButton" onclick="togglePortfolio()">Portfolio</h3>
+        <h3 class="navButton">Contact Us</h3>
+      </div>
+      <!-- <h3 class="navButton">Our Services</h3>
       <h3 class="navButton">About Us</h3>
-      <h3 class="navButton" onclick="displayGallery()">Portfolio</h3>
-      <h3 class="navButton">Contact Us</h3>
+      <h3 class="navButton">Portfolio</h3>
+      <h3 class="navButton">Contact Us</h3> -->
 
+    </div>
+
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
     </div>
   </div>
 
@@ -51,6 +96,8 @@
   </div>
 
   <script src="js/gallery.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/burger.js"></script>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
