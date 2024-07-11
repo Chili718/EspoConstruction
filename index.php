@@ -27,13 +27,17 @@
 
         toggleInitialMenu();
 
-        //console.log($(this).text());
+        if (window.innerWidth <= 700 && isOpen == true) {
+
+          toggle();
+
+        }
 
         if ($(this).text() != currentPage) {
 
-          if(currentPage == 'Portfolio'){
+          if (currentPage == 'Portfolio') {
 
-
+            togglePortfolio();
 
           }
 
@@ -75,6 +79,11 @@
         } else if ($(".navigationButtonHolder").hasClass("navigationButtonHolderChange") == true && window.innerWidth > 700 && $("#burger").css('visibility').toLowerCase() == 'visible') {
 
           $("#burger").css('visibility', 'hidden');
+          if (isOpen == true) {
+
+            toggle();
+
+          }
 
         }
 
@@ -90,7 +99,7 @@
   <div class="navigationMenu" id="navigationMenu">
     <img src="images/EspoConstruction-Logo.png" alt="" class="navImage" id="navImage">
 
-    <div class="navigationButtonHolder" id="navigationButtonHolder">
+    <div class="navigationButtonHolder navigationButtonHolderClose" id="navigationButtonHolder">
 
       <div>
         <h3 class="navButton">Our Services</h3>
@@ -100,10 +109,6 @@
         <h3 class="navButton">Portfolio</h3>
         <h3 class="navButton">Contact Us</h3>
       </div>
-      <!-- <h3 class="navButton">Our Services</h3>
-      <h3 class="navButton">About Us</h3>
-      <h3 class="navButton">Portfolio</h3>
-      <h3 class="navButton">Contact Us</h3> -->
 
     </div>
 
@@ -111,6 +116,8 @@
       <span></span>
       <span></span>
     </div>
+
+    <div class="burgerMenu" id="burgerMenu"></div>
   </div>
 
   <div class="portfolioGallery">

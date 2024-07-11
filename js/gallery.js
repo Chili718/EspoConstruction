@@ -7,7 +7,7 @@ for(var i = 0; i < images.length; i++){
     images[i].style.display = 'none';
     images[i].className += ' fade-out';
 }
-
+//display the first image which will be the background
 images[current].style.display = 'block';
 images[current].className += ' fade-in';
 
@@ -28,7 +28,7 @@ function next(){
     }
 
     images[current].style.display = 'block';
-
+    //created the fade out effect using the css transition
     window.setTimeout(function () {
         images[current].className += ' fade-in';
     }, 0);
@@ -51,7 +51,7 @@ function previous(){
     }
     
     images[current].style.display = 'block';
-
+    //created the fade out effect using the css transition
     window.setTimeout(function () {
         images[current].className += ' fade-in';
     }, 0);

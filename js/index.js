@@ -1,28 +1,24 @@
-//JS file for the style changes on the homepage
+//JS file for the page changes on the homepage
 
+//bool for checking if the intial screen has been moved or not
 var initialSelect = false;
 
 function toggleInitialMenu(){
 
     if (initialSelect != true) {
 
-        //document.getElementById('navigationMenu').className += ' navigationMenuChange';
+ 
         document.getElementById('navImage').className += ' navImageChange';
         document.getElementById('navigationButtonHolder').className += ' navigationButtonHolderChange';
-        /* document.querySelectorAll('.navButton').forEach((button)  => {
 
-            button.style.border = "1px solid black";
-
-        }); */
-        selectedOnce = true;
+        initialSelect = true;
 
     }
 
 }
-
+//show the portfolio page
 function togglePortfolio(){
 
-    //document.getElementById('navigationMenu').className += ' navigationMenuChange';
     document.getElementById('navigationMenu').classList.toggle('navigationMenuChange');
     document.querySelectorAll('.galleryArrow').forEach((arrow) => {
 
