@@ -3,6 +3,7 @@ Styling for the Home Page (index.php)
 **************************************************************************/
 
 @import url(portfolioGallery.css);
+@import url(contactModal.css);
 
 body{
  

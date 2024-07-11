@@ -1,0 +1,300 @@
+.contactModal {
+
+    border-radius: 0%;
+    border: none;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0));
+    position: relative;
+    overflow: visible;
+
+}
+
+.contactModal::backdrop {
+
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.closeContactModal {
+
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.8);
+    opacity: 0.8;
+    transition: 0.2s ease;
+    cursor: pointer;
+
+}
+
+.contactButtonContainer {
+
+    position: fixed;
+    bottom: -21px;
+    right: -61px;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
+
+}
+
+.contactButton {
+
+    padding: 4px 50px 4px 50px;
+    background-color: rgba(255, 255, 255, 1);
+    clip-path: polygon(100% 0, 89% 50%, 77% 100%, 0% 100%, 12% 47%, 24% 0);
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 2.1em;
+    transition: 0.4s ease;
+
+}
+
+
+.frm {
+
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 15px 20px 15px;
+    box-shadow: 0.1rem 0.1rem 0.3rem var(--white-shade-two), -0.08rem -0.08rem 0.25rem var(--white);
+    max-width: 350px;
+    min-width: 215px;
+    /* margin-top: 4%; */
+
+}
+
+.frm label,
+.frm input,
+input[type=file]::file-selector-button,
+span {
+
+    font-family: cardea, serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.frm label,
+span {
+
+    color: rgba(2, 11, 68, 0.8);
+    font-size: 1.2rem;
+
+}
+
+.frm input {
+
+    color: rgba(2, 11, 68, 1);
+    font-size: 1rem;
+
+}
+
+input:-webkit-autofill {
+
+    -webkit-text-fill-color: rgba(2, 11, 68, 1);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+
+    transition: background-color 5000s ease-in-out 0s;
+
+}
+
+.frm h1 {
+
+    margin-bottom: 35px;
+    font-size: 1.8rem;
+    color: rgba(2, 11, 68, 1);
+    text-align: center;
+
+}
+
+.infoBlock {
+
+    width: clamp(225px, 25vw, 300px);
+    margin-right: 35px;
+
+}
+
+.infoBlock p {
+
+    margin: 0;
+
+}
+
+.infoBlock p:nth-of-type(2) {
+
+    margin: 3px 0px 3px 0px;
+
+}
+
+.allInp {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.inp {
+
+    margin-bottom: 15px;
+
+}
+
+.allInp .inp {
+
+    position: relative;
+
+}
+
+.allInp .inp input {
+
+    width: 100%;
+    min-width: 225px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: var(--black);
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: solid 1px rgba(2, 11, 68, 0.4);
+    outline: none;
+    background: transparent;
+
+}
+
+.allInp .inp label {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 0px 5px 10px;
+    pointer-events: none;
+    transition: 0.3s ease;
+
+}
+
+.allInp .inp input:focus~label,
+.allInp .inp input:valid~label {
+    top: -25px;
+    left: 0;
+    color: rgba(2, 11, 68, 0.56);
+    font-size: 0.95rem;
+}
+
+.inpTextArea {
+
+    width: 250px;
+    height: 150px;
+    border-color: rgba(2, 11, 68, 0.2);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px 5px 5px 5px;
+
+}
+
+.allInp .inp textarea:focus~label,
+.allInp .inp textarea:valid~label {
+
+    top: -28px;
+    left: 0;
+    color: rgba(2, 11, 68, 0.56);
+    font-size: 0.95rem;
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .contactButton {
+
+        font-size: 1.8em;
+        padding: 6px 60px 6px 60px;
+
+    }
+
+    .contactButtonContainer {
+
+        bottom: -10px;
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .contactButton {
+
+        font-size: 1.6rem;
+
+    }
+
+    .frm {
+
+        padding: 15px 35px 30px 35px;
+
+    }
+
+    .contactModal {
+
+        padding: 8px;
+
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .contactButton {
+
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 15% 50%, 0% 0%);
+
+    }
+
+    .contactButtonContainer {
+
+        right: unset;
+
+    }
+
+    .contactModal {
+
+        padding-top: 0px;
+
+    }
+
+    .closeContactModal {
+
+        top: 15px;
+        right: 15px;
+        font-size: 40px;
+
+    }
+
+    .inpTextArea {
+
+        height: 100px;
+
+    }
+
+}
+
+@media (hover: hover) {
+    .closeContactModal:hover {
+
+        transform: scale(1.1);
+
+    }
+
+    .contactButtonContainer:hover .contactButton {
+
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 15% 50%, 0% 0%);
+
+    }
+}
