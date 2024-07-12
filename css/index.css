@@ -89,7 +89,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: clamp(300px, 70vw, 850px);
+    width: clamp(300px, 70vw, 750px);
     height: 40px;
     transition: transform 0.6s ease;
     margin-top: 20px;

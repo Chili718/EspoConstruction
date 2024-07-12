@@ -3,7 +3,6 @@ const contactModal = document.getElementById('contactModal');
 const openContactModal = document.getElementById('contact');
 const closeContactModal = document.getElementById('closeContactModal');
 
-
 openContactModal.addEventListener('click', () => {
 
     contactModal.showModal();

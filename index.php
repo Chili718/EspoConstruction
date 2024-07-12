@@ -58,6 +58,7 @@
               pageChange("about.html");
               break;
             case 'Portfolio':
+              $('#pageContentContainer').empty();
               togglePortfolio();
               break;
             default:
@@ -112,7 +113,7 @@
           data: {},
           success: function(data) {
             $('#pageContentContainer').empty();
-            $('#pageContentContainer').html(data);
+            $('#pageContentContainer').html(data).hide().fadeIn("slow");
           },
           error: function() {
             console.log("Error!");
@@ -134,11 +135,11 @@
     <div class="navigationButtonHolder navigationButtonHolderClose" id="navigationButtonHolder">
 
       <div>
+        <h3 class="navButton">Portfolio</h3>
         <h3 class="navButton">Our Services</h3>
-        <h3 class="navButton">About Us</h3>
       </div>
       <div>
-        <h3 class="navButton">Portfolio</h3>
+        <h3 class="navButton">About Us</h3>
         <h3 class="navButton" id="contact">Contact Us</h3>
       </div>
 
@@ -154,24 +155,7 @@
 
   <div class="pageContentContainer" id="pageContentContainer">
 
-    <div class="aboutPage">
-      <div class="workerContainer">
-        <img src="images/Miguel.png" alt="">
-        <div class="workerText">
-          <h1>Miguel Espinoza</h1>
-          <h3>Owner</h3>
-          <p>With 10+ years of experience regarding remodeling and carpentry work, Miguel, specializes in bathroom and kitchen remodels as well as accent walls. Including building several houses from the ground up, you can rest assured that all your remodeling needs are in great hands!</p>
-        </div>
-      </div>
-      <div class="workerContainer">
-        <img src="images/Jacob.png" alt="">
-        <div class="workerText">
-          <h1>Jacob Espinoza</h1>
-          <h3>Manager</h3>
-          <p>8+ years of construction and project management experience.</p>
-        </div>
-      </div>
-    </div>
+
 
   </div>
 
