@@ -93,6 +93,14 @@
 
         }
 
+        if (window.innerWidth <= 426) {
+
+          $('#pageContentContainer').css('height', (window.innerHeight - 161) + 'px');
+
+        } else {
+          $('#pageContentContainer').css('height', (window.innerHeight - 89) + 'px');
+        }
+
       });
       //function to get and display the selected pages content without refreshing using ajax
       function pageChange(page) {
@@ -146,6 +154,24 @@
 
   <div class="pageContentContainer" id="pageContentContainer">
 
+    <div class="aboutPage">
+      <div class="workerContainer">
+        <img src="images/Miguel.png" alt="">
+        <div class="workerText">
+          <h1>Miguel Espinoza</h1>
+          <h3>Owner</h3>
+          <p>With 10+ years of experience regarding remodeling and carpentry work, Miguel, specializes in bathroom and kitchen remodels as well as accent walls. Including building several houses from the ground up, you can rest assured that all your remodeling needs are in great hands!</p>
+        </div>
+      </div>
+      <div class="workerContainer">
+        <img src="images/Jacob.png" alt="">
+        <div class="workerText">
+          <h1>Jacob Espinoza</h1>
+          <h3>Manager</h3>
+          <p>8+ years of construction and project management experience.</p>
+        </div>
+      </div>
+    </div>
 
   </div>
 
