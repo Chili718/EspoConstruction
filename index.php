@@ -19,6 +19,14 @@
 
   <script>
     $(document).ready(function() {
+
+      if (window.innerWidth <= 426) {
+
+        $('#pageContentContainer').css('height', (window.innerHeight - 161) + 'px');
+
+      } else {
+        $('#pageContentContainer').css('height', (window.innerHeight - 89) + 'px');
+      }
       //functionality for the button to open up the users email service
       $("#contactSend").on("click", function() {
         $("#frm").trigger("submit");
@@ -53,7 +61,7 @@
               togglePortfolio();
               break;
             default:
-              
+
           }
 
           currentPage = $(this).text();
@@ -69,7 +77,7 @@
       });
 
       $(window).resize(function() {
-        
+
         if ($(".navigationButtonHolder").hasClass("navigationButtonHolderChange") == true && window.innerWidth <= 700 && $("#burger").css('visibility').toLowerCase() != 'visible') {
 
           $("#burger").css('visibility', 'visible');

@@ -4,6 +4,7 @@ Styling for the Home Page (index.php)
 
 @import url(portfolioGallery.css);
 @import url(contactModal.css);
+@import url(pages.css);
 
 body{
  
@@ -13,13 +14,29 @@ body{
 
 }
 
+.pageContentContainer{
+
+    position: fixed;
+    overflow-x: hidden;
+    width: 100%;
+    top: 73px;
+    background-color: red;
+
+}
+
+.pageContentContainerShift{
+
+    z-index: 17;
+
+}
+
 .navigationMenu{
 
     -webkit-box-shadow: inset 0px 0px 0px 15px white;
     -moz-box-shadow: inset 0px 0px 0px 15px white;
     box-shadow: inset 0px 0px 0px 15px white;
     transition: all 0.6s ease;
-    z-index: 17;
+    z-index: 16;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.5);
     width: 100vw;
@@ -254,9 +271,16 @@ body{
     .navImageChange{
 
         width: 220px;
-        top: 5px;
+        top: 12px;
         left: auto;
+        background-color: rgba(0,0,0,0);
 
+    }
+
+    .pageContentContainer{
+
+        top: 90px;
+        /* clip-path: polygon(0% 0%, 0% 100%, 43% 100%, 43% 82%, 57% 81%, 57% 95%, 43% 95%, 41% 100%, 100% 100%, 100% 0%); */
     }
 
 }

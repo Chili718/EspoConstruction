@@ -10,7 +10,7 @@ function toggleInitialMenu(){
  
         document.getElementById('navImage').className += ' navImageChange';
         document.getElementById('navigationButtonHolder').className += ' navigationButtonHolderChange';
-
+        document.getElementById('pageContentContainer').classList.toggle('pageContentContainerShift');
         initialSelect = true;
 
     }

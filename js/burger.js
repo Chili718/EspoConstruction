@@ -6,6 +6,7 @@ var burgerMenu = document.getElementById('burgerMenu');
 var spans = document.querySelectorAll('.burger span');
 var isOpen = false;
 var navButtons = document.getElementById('navigationButtonHolder');
+var pageContent = document.getElementById('pageContentContainer');
 //toggle show/hide the burger menu
 burger.addEventListener('click', () => {
 
@@ -29,6 +30,7 @@ document.querySelectorAll('.navButton').forEach(navButton => {
 //function to hide the burger menu
 function toggle() {
 
+    pageContent.classList.toggle('pageContentContainerShift');
     burger.classList.toggle("hideBurger");
     burgerMenu.classList.toggle("burgerMenuOpen");
     spans.forEach(span => {
