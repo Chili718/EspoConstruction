@@ -11,6 +11,8 @@
 
   <link rel="icon" href="images/EspoConstruction-Icon.png">
 
+  <link rel="stylesheet" href="https://use.typekit.net/vut5tnx.css">
+
   <link rel="stylesheet" href="css/index.css">
 
 
@@ -192,8 +194,9 @@ Start of Contact Modal
     <form class="frm" id="frm" method="dialog" onsubmit="return submitMail(this)">
       <div class="infoBlock">
 
-        <p><b>Mobile:</b> </p>
-        <p><b>Email:</b> </p>
+        <p><b>Miguel's Mobile:</b> 803-981-3423</p>
+        <p><b>Jacob's Mobile:</b> 803-417-2997</p>
+        <p><b>Email:</b> jacob@espobrosconstruction.com</p>
 
       </div>
 

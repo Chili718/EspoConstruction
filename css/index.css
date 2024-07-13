@@ -11,6 +11,9 @@ body{
     margin: 0;
     padding: 0;
     overflow-y: hidden;
+    font-family: "schoolbook", serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
@@ -36,10 +39,14 @@ body{
 .introText{
 
     margin-top: 0;
-    font-size: 1.7em;
-    width: clamp(250px, 75vw, 550px);
+    font-size: 1.6em;
+    /* width: clamp(250px, 75vw, 550px); */
     text-align: center;
-
+    clip-path: polygon(0 25%, 5% 5%, 5% 0, 95% 0, 95% 5%, 100% 25%, 100% 75%, 95% 95%, 95% 100%, 5% 100%, 5% 95%, 0 75%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 6px 32px;
+    /* box-shadow: inset 0.09rem 0.09rem 0.3rem rgba(0, 0, 0, 0.2), inset
+        -0.07rem -0.07rem 0.25rem rgba(0, 0, 0, 0.04); */
 }
 
 .navigationMenu{
@@ -315,7 +322,7 @@ body{
     .introText {
 
         font-size: 1em;
-        padding-top: 5px;
+        margin-top: 5px;
 
     }
 
@@ -347,6 +354,13 @@ body{
 
         top: 90px;
         /* clip-path: polygon(0% 0%, 0% 100%, 43% 100%, 43% 82%, 57% 81%, 57% 95%, 43% 95%, 41% 100%, 100% 100%, 100% 0%); */
+    }
+
+    .introText{
+
+        width: 260px;
+        padding: 6px 15px;
+
     }
 
 }
