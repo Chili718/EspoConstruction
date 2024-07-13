@@ -54,6 +54,12 @@ Styling for the Portfolio Gallery on the Homepage (index.php)
 
 }
 
+.zToggle{
+
+    z-index: 15;
+
+}
+
 .show{
 
     visibility: visible;

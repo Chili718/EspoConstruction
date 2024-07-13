@@ -11,6 +11,7 @@ function toggleInitialMenu(){
         document.getElementById('navImage').className += ' navImageChange';
         document.getElementById('navigationButtonHolder').className += ' navigationButtonHolderChange';
         document.getElementById('pageContentContainer').classList.toggle('pageContentContainerShift');
+        document.querySelector('.introText').style.display = "none";
         initialSelect = true;
 
     }

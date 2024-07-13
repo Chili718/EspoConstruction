@@ -130,7 +130,9 @@
 <body>
 
   <div class="navigationMenu" id="navigationMenu">
-    <img src="images/EspoConstruction-Logo.png" alt="" class="navImage" id="navImage">
+    <img src="images/EspoConstruction-Logo-Est.png" alt="" class="navImage" id="navImage">
+
+    <h3 class="introText">Lets Make Your Dream Home A Reality!</h3>
 
     <div class="navigationButtonHolder navigationButtonHolderClose" id="navigationButtonHolder">
 
@@ -144,6 +146,7 @@
       </div>
 
     </div>
+
 
     <div class="burger" id="burger">
       <span></span>

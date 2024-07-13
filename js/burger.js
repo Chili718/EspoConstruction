@@ -7,6 +7,7 @@ var spans = document.querySelectorAll('.burger span');
 var isOpen = false;
 var navButtons = document.getElementById('navigationButtonHolder');
 var pageContent = document.getElementById('pageContentContainer');
+var galleryArrows = document.querySelectorAll(".galleryArrow");
 //toggle show/hide the burger menu
 burger.addEventListener('click', () => {
 
@@ -30,6 +31,16 @@ document.querySelectorAll('.navButton').forEach(navButton => {
 //function to hide the burger menu
 function toggle() {
 
+    if (galleryArrows[0].classList.contains('show')) {
+
+        galleryArrows.forEach(arrow => {
+
+            arrow.classList.toggle("zToggle");
+
+        });
+
+    }
+
     pageContent.classList.toggle('pageContentContainerShift');
     burger.classList.toggle("hideBurger");
     burgerMenu.classList.toggle("burgerMenuOpen");
@@ -39,6 +50,7 @@ function toggle() {
 
     });
     navButtons.classList.toggle('navigationButtonHolderOpen');
+
     //setting the bool for if the menu is open
     //purpose is to close the menu if the user shrinks the to a size where the menu does not exist
     //if they were to expand it again then the menu would be open

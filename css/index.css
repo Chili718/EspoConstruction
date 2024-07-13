@@ -33,6 +33,15 @@ body{
 
 }
 
+.introText{
+
+    margin-top: 0;
+    font-size: 1.7em;
+    width: clamp(250px, 75vw, 550px);
+    text-align: center;
+
+}
+
 .navigationMenu{
 
     -webkit-box-shadow: inset 0px 0px 0px 15px white;
@@ -62,7 +71,7 @@ body{
 
 .navImage{
 
-    width: clamp(290px, 65vw, 765px);
+    width: clamp(290px, 65vw, 825px);
     transition: all 0.6s ease;
 
 }
@@ -80,7 +89,7 @@ body{
 
 .navImageGallery{
 
-    width: 125px !important;
+    width: 160px !important;
 
 }
 
@@ -227,6 +236,12 @@ body{
         font-size: 1em;
 
     }
+
+    .introText {
+
+        font-size: 1.5em;
+
+    }
     
 }
 
@@ -235,6 +250,16 @@ body{
     .copyRight {
     
         font-size: 0.6em;
+
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .introText {
+
+        font-size: 1.2em;
 
     }
 
@@ -284,6 +309,13 @@ body{
     .copyRight {
 
         font-size: 0.5em;
+
+    }
+
+    .introText {
+
+        font-size: 1em;
+        padding-top: 5px;
 
     }
 
