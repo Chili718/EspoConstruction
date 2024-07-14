@@ -118,7 +118,7 @@ select:-webkit-autofill:focus {
 
 .infoBlock {
 
-    width: clamp(225px, 25vw, 300px);
+    width: clamp(250px, 40vw, 303px);
     margin-right: 35px;
 
 }
@@ -249,7 +249,7 @@ select:-webkit-autofill:focus {
 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 619px) {
 
     .contactButton {
 
@@ -280,6 +280,22 @@ select:-webkit-autofill:focus {
     .inpTextArea {
 
         height: 100px;
+
+    }
+
+    .frm{
+
+        width: 60vw;
+
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+
+    .frm{
+
+        width: 70vw;
 
     }
 
