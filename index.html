@@ -45,7 +45,7 @@
                 }
 
                 if ($(this).text() != currentPage && $(this).text() != 'Contact Us') {
-
+                    
                     if (currentPage == 'Portfolio') {
                         togglePortfolio();
                     }
@@ -71,7 +71,7 @@
 
                 }
 
-                if (window.innerWidth <= 700 && $("#burger").css('visibility').toLowerCase() != 'visible') {
+                if (window.innerWidth <= 700 && $("#burger").css('visibility').toLowerCase() != 'visible' && initialSelect == true) {
 
                     $("#burger").css('visibility', 'visible');
 
@@ -180,7 +180,7 @@
 
     </div>
 
-    <div class="copyRight">Copyright © 2024 Espinoza Brothers Construction LLC - All rights reserved.</div>
+    <div class="copyRight">Copyright © 2024 Espinoza Brothers Construction LLC.</div>
 
     <!-- 
   

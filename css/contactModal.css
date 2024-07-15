@@ -23,13 +23,14 @@
     opacity: 0.8;
     transition: 0.2s ease;
     cursor: pointer;
+    z-index: 55;
 
 }
 
 .contactButtonContainer {
 
     position: fixed;
-    bottom: -21px;
+    bottom: clamp(-22px, -3dvh, -2px);
     right: -61px;
     cursor: pointer;
     filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
@@ -120,6 +121,7 @@ select:-webkit-autofill:focus {
 
     width: clamp(250px, 40vw, 303px);
     margin-right: 35px;
+    z-index: 50;
 
 }
 
@@ -221,7 +223,7 @@ select:-webkit-autofill:focus {
 
     .contactButtonContainer {
 
-        bottom: -10px;
+        /* bottom: -3dvh; */
 
     }
 
@@ -291,11 +293,17 @@ select:-webkit-autofill:focus {
 
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 445px) {
 
     .frm{
 
         width: 70vw;
+
+    }
+
+    .contactButtonContainer {
+
+        bottom: 0;
 
     }
 
