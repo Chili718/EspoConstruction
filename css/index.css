@@ -29,7 +29,7 @@ body{
     overflow-x: hidden;
     width: 100%;
     top: 73px;
-    mask: linear-gradient(180deg, transparent, white 2%, white 98%, transparent);
+    mask: linear-gradient(180deg, transparent, white 2%, white 97%, transparent);
     /* background-color: red; */
     display: flex;
     justify-content: center;

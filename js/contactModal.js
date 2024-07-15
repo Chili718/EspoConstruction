@@ -30,7 +30,7 @@ contactModal.addEventListener("click", e => {
 //mail function for form
 function submitMail(form) {
 
-    window.open("mailto:jacob@espobrosconstruction.com?subject=" + form.subject.value + "%20-%20 Name:%20" + form.name.value + "&body=" + form.message.value + "");
+    window.open("mailto:jespinoza932@gmail.com?subject=" + form.subject.value + "%20-%20" + form.name.value + "&body=" + form.message.value + "");
 
     contactModal.close();
 
